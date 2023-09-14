@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+    background-image: url("/To-do/Media/bg.jpeg"); 
+}
+
+.container {
+    display: flex;
+    border-radius: 15px;
+    border: solid black 5px;
+    margin: 10px;
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    width: 90%;
+    height: 3px;
+    margin: 10px;;
+    color: black;
+    background-color: black;
+}
+
+.inouts {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    justify-content: center
+}
+
+.input input{
+    display: flex;
+    margin: 10px;
+    width: 200px;
+    height: 30px;
+    border: none;
+    color: black;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #f3d0fa;
+    border-radius: 10px;
+}
+
+.input input:hover{
+    width: 250px; 
+    box-shadow: black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 2px solid black;
+    transition: .4s;
+}
+
+.input button{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fcf4c6;
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+
+.out {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    align-items: center;
+    justify-content: center
+}
+
+ul#taskList {
+    display: flex;
+    list-style-type: none;
+    flex-wrap: wrap;
+    padding: 10;
+    margin: 10;
+    width: 100%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-item {
+    display: flex;
+    margin: 5px;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+.task-item:hover {
+    background-color: #fcf4c6;
+}
+
+.task-item button {
+    background-color: #f3d0fa;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    color: #888;
+}
